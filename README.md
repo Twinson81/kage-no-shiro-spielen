@@ -6,20 +6,25 @@ Shinobi-Koop für 1–4 Spieler (Unreal Engine 5.8). Frühe Testversion: Graybox
 
 Unter **Releases** (rechts) die neueste `KageNoShiro_Windows.zip` laden, entpacken und `KageNoShiro.exe` starten. Windows 10/11, 64 Bit; eine Grafikkarte mit DirectX 12.
 
+**Updates:** Ab Version 0.2.0 prüft das Hauptmenü beim Start, ob es hier eine neuere Version gibt. Dann erscheint **Jetzt aktualisieren** – das Spiel lädt die neue Version, prüft sie und startet neu. Wer noch 0.1.0 hat, lädt 0.2.0 einmal von Hand.
+
 ## Zusammen spielen (direkte Verbindung)
 
-1. Einer klickt im Startmenü auf **Spiel hosten**. Das Menü zeigt seine Adressen.
-2. Die anderen geben die Adresse des Hosts ein und klicken **Beitreten**.
-3. Beim ersten Start die Windows-Firewall-Frage mit „Zugriff zulassen“ beantworten.
+1. Alle tragen im Startmenü ihren Namen ein.
+2. Einer klickt auf **Spiel hosten** und landet in der **Lobby**. Dort stehen Einladecodes (z. B. `7H3KQ-0M8ZA`) mit Kopieren-Knopf.
+3. Die anderen geben den Code (oder die IP) ein und klicken **Beitreten**. In der Lobby sieht man, wer da ist und wer bereit ist; der Host startet das Spiel.
+4. Beim ersten Start die Windows-Firewall-Frage mit „Zugriff zulassen“ beantworten.
 
-| Ihr seid … | Adresse | Was nötig ist |
+Der Einladecode ist die verpackte Adresse des Hosts – es gibt keinen Server dazwischen. Darum gilt weiter:
+
+| Ihr seid … | Code aus der Lobby | Was nötig ist |
 |---|---|---|
-| im selben WLAN/LAN | lokale IP des Hosts (z. B. 192.168.1.20) | nichts |
-| an verschiedenen Orten, mit VPN | VPN-IP des Hosts (Tailscale: 100.x.y.z) | beide nutzen Tailscale oder ZeroTier im selben Netz |
-| an verschiedenen Orten, direkt | öffentliche IP des Hosts | Portweiterleitung **UDP 7777** am Router des Hosts |
+| im selben WLAN/LAN | LAN | nichts |
+| an verschiedenen Orten, mit VPN | VPN (100.x.y.z) | beide nutzen Tailscale oder ZeroTier im selben Netz |
+| an verschiedenen Orten, direkt | Internet | Portweiterleitung **UDP 7777** am Router des Hosts |
 
 Am einfachsten ist das VPN. Bei manchen Anschlüssen (DS-Lite, Mobilfunk) funktioniert der direkte Weg nicht.
-Alle Spieler brauchen dieselbe Version. Mehr steht in `LIESMICH.txt` im ZIP.
+Alle Spieler brauchen dieselbe Version; mit einer anderen lehnt der Host den Beitritt ab. Mehr steht in `LIESMICH.txt` im ZIP.
 
 ## Steuerung
 
