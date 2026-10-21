@@ -1,6 +1,6 @@
 # Kage no Shiro – Prototyp zum Mitspielen
 
-Shinobi-Koop für 1–4 Spieler (Unreal Engine 5.8). Frühe Testversion: Graybox-Festung, Parkour (Kanten, Wandlauf, Enterhaken), Kampf mit Haltung, Abwehr und Deflect gegen eine Trainingswache.
+Shinobi-Koop für 1–4 Spieler (Unreal Engine 5.8). Frühe Testversion: Graybox-Festung, Parkour (Kanten, Wandlauf, Enterhaken, Doppelsprung), Schleichen, Kampf mit Haltung, Abwehr und Deflect gegen eine Trainingswache – mit Kampfkunst oder Schwert.
 
 ## Herunterladen
 
@@ -28,7 +28,9 @@ Alle Spieler brauchen dieselbe Version; mit einer anderen lehnt der Host den Bei
 
 ## Steuerung
 
-WASD/Maus gehen und umsehen · Umschalt rennen · Leertaste springen (Kante: hochziehen, Wand: abspringen) · C ducken (Kante: loslassen) · E Enterhaken · linke Maustaste Angriff · rechte Maustaste Abwehr (kurz vor dem Treffer: Deflect) · Esc Menü. Gamepad wird unterstützt.
+WASD/Maus gehen und umsehen · Umschalt rennen · Leertaste springen (in der Luft nochmal: Doppelsprung mit Salto; Kante: hochziehen; Wand: abspringen) · C ducken und schleichen (Kante: loslassen) · E Enterhaken · linke Maustaste Angriff · rechte Maustaste Abwehr (kurz vor dem Treffer: Deflect) · Q zwischen Kampfkunst und Schwert wechseln · Esc Menü. Gamepad wird unterstützt.
+
+**Kampf:** Ihr beginnt ohne Waffe mit Fäusten und Tritten. Am Schwertständer im Hof hebt jeder ein Schwert auf; danach wechselt Q zwischen Kampfkunst und Schwert.
 
 ## Hinweise
 
